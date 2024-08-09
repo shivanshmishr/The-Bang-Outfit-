@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&family=RocknRoll+One&family=Source+Code+Pro&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 0.3vh;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(210, 209, 209);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #9c2bff, #000a3c);
+  border-radius: 999px;
+}
+
+/* navbar css */
+.navbar {
+  /* background: linear-gradient(
+    90deg,
+    rgb(243, 224, 255) 0%,
+    rgb(234, 253, 255) 100%
+  ); */
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  /* font-family: 'RocknRoll One', sans-serif; */
+  z-index: 999999px;
+}
+
+.navlinks-mobile {
+  background: linear-gradient(rgb(238, 189, 251), rgb(255, 255, 255));
+}
+
+.profileIcon:hover + .signInButton {
+  display: block;
+}
+
+.triangle {
+  height: 20px;
+  width: 20px;
+  /* box-shadow: 1px 1px 10px black; */
+  border-bottom: 20px solid rgb(255, 255, 255);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  top: -16%;
+  left: 44%;
+}
+
+/* Home Banner CSS */
+.background {
+  background-image: url("./../public/images/bg.jpg") !important;
+  background-size: 40%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #f5dbe4;
+}
+
+/* About Us CSS */
+.aboutUsBackground {
+  background-image: url("./../public/images/aboutusbg.jpg") !important;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 800px) {
+  .aboutUsBackground {
+    background-image: url("./../public/images/aboutusbg.jpg") !important;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+  }
+}
+
+.savebtn {
+  background: linear-gradient(90deg, #9e00ff 0%, #000 100%);
+}
+
+.bluebtn {
+  background: linear-gradient(90deg, #9e00ff 0%, #000 100%);
+}
+
+.redbtn {
+  background: linear-gradient(90deg, #ff0000 0%, #000 100%);
+}
+
+/* Navbar Responsive my code */
+@media (max-width: 992px) {
+  .navlinks {
+    display: none;
+  }
+}
+
+.footerbg{
+  background: linear-gradient(179deg, #EBB7A9 1.51%, #EFBBAB 40.69%, #F5CBBD 82.28%, #F5CCBF 99.43%);
+}
+
+@media (max-width: 768px) {
+  .footerbg{
+    background-image: url(./../public/images/footerbgblur.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+  }
+}
+
